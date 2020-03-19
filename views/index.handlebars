@@ -1,0 +1,30 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">The Minden, NV Daily</h1>
+    <p class="lead">Checkout all the latest Carson Valley news</p>
+    <button class="btn btn-primary scrap">Find New Articles!</button>
+    <button class="btn btn-primary delete-all">Delete All</button>
+  </div>
+
+</div>
+
+    <div class="container">
+    {{#each articles}}
+        <div class="row">
+                <div class="col-"lg>
+                <p>Article: {{headline}}</p>
+                <p><a href="{{url}}" class="smaller">url: {{url}}</a></p>
+                <form>
+                  <textarea name="" id="" cols="30" rows="2"></textarea>
+                  <br>
+                  <button data-comment="{{_id}}" class="btn btn-primary article-comment">Add Comment</button>
+                </form>
+
+                <button data-id="{{_id}}" class="btn btn-primary article-delete">delete article</button>
+
+            </div>
+        </div>
+    {{/each}}
+    </div>
+
+
