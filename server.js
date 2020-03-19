@@ -21,7 +21,7 @@ app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 // mongoose.connect("mongodb://localhost/scrap", {useNewUrlParser: true});
-mongoose.connect("mongodb://<dbuser>:<dbpassword>@ds129013.mlab.com:29013/heroku_fqmr8dz9");
+mongoose.connect("mongodb://easternlai:Password1@ds129013.mlab.com:29013/heroku_fqmr8dz9");
 
 require("./routes/html-routes.js")(app);
 
